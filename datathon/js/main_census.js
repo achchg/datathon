@@ -4,8 +4,15 @@
 /**
  * Created by achchg on 3/3/16.
  */
-var width = 700,
-    height = 580;
+var margin = {
+    top: 40,
+    right: 40,
+    bottom: 60,
+    left: 60
+};
+
+var width = 1000 - margin.left - margin.right,
+    height = 800 - margin.top - margin.bottom;
 
 var formatnumber = d3.format(".0%");
 
@@ -16,7 +23,7 @@ var svg = d3.select("#chart-area").append("svg")
 var projection = d3.geo.mercator()
     .scale(140000)
     .translate([width / 2, height / 2])
-    .center([-71.057,42.313]);
+    .center([-71.1,42.313]);
 
 var path = d3.geo.path()
     .projection(projection);

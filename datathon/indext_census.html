@@ -10,16 +10,19 @@
 <body>
 
 <h1 align="center"><b>Green Diabetes</b></h1>
-<form class="form-inline">
-    <div class="form-group">
-        <label for="ranking-type" id = "label_text"></label>
-        <select class="form-control" id="ranking-type">
-            <option value="NDVI">Greenness</option>
-            <option value="prevalence">Diabetes Prevalence</option>
-        </select>
-    </div>
-</form>
-<div id="chart-area"></div>
+<div class = "container">
+    <div class = "col-lg-12"><form class="form-inline">
+        <div class="form-group">
+            <label for="ranking-type" id = "label_text"></label>
+            <select class="form-control" id="ranking-type">
+                <option value="NDVI">Greenness</option>
+                <option value="prevalence">Diabetes Prevalence</option>
+            </select>
+        </div>
+    </form></div>
+
+    <div  class = "col-lg-12" id="chart-area"></div>
+</div>
 
 
 <script src="js/d3.v3.min.js" charset="utf-8"></script>

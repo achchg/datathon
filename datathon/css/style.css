@@ -16,6 +16,11 @@ p{
 
 }
 
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
 path{
 stroke:white;
 stroke-width: 1px;
@@ -32,9 +37,6 @@ stroke-width: 1px;
     color: #000;
 }
 
-#chart-area{
-    alignment: center;
-}
 
 /* vis1 1*/
 .d3-tip {
