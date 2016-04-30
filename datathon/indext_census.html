@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Datathon</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1 align="center"><b>Green Diabetes</b></h1>
+<form class="form-inline">
+    <div class="form-group">
+        <label for="ranking-type" id = "label_text"></label>
+        <select class="form-control" id="ranking-type">
+            <option value="NDVI">Greenness</option>
+            <option value="prevalence">Diabetes Prevalence</option>
+        </select>
+    </div>
+</form>
+<div id="chart-area"></div>
+
+
+<script src="js/d3.v3.min.js" charset="utf-8"></script>
+<script src="js/topojson.v1.min.js"></script>
+<script src="js/queue.v1.min.js"></script>
+<script src="js/d3.tip.js"></script>
+<script src="js/main_census.js"></script>
+</body>
+</html>
